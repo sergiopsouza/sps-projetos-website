@@ -1,5 +1,6 @@
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -22,6 +23,9 @@
 
 <script type="text/javascript">
    window.onload = function() {
+      
+   
+      $('#phone').mask('(00) 00000-0000');
       if(document.getElementById('contact-form')) {
        document.getElementById('contact-form').addEventListener('submit', function(event) {
            event.preventDefault();
